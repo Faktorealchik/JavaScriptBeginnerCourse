@@ -51,7 +51,7 @@ function test_arguments(InputParameter) {
 	console.log("Parameter: " + InputParameter);
 	console.dir(arguments);
 
-	for (let i = 1; i < arguments.length; i++) {
+	for ( i = 1; i < arguments.length; i++) {
 		InputParameter = arguments[i];
 		console.log("Iteration #" + i + ", InputParameter = " + InputParameter + 
 			", variableToChange = " + variableToChange);
@@ -80,7 +80,7 @@ console.log(/*typeof (*/emptyVariable/*)*/); // design error
 // Array disorientation
 // ------------------------
 
-let testArray = [1, 2, "OK", {"foo" : "bar"}];
+var testArray = [1, 2, "OK", {"foo" : "bar"}];
 
 // testArray.length += 100;
 // testArray.push("New element");
